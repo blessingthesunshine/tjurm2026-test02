@@ -1,6 +1,6 @@
 #include "impls.h"
-
-
+using namespace cv;
+using namespace std;
 std::vector<std::vector<cv::Point>> find_contours(const cv::Mat& input) {
     /**
      * 要求：
@@ -16,8 +16,22 @@ std::vector<std::vector<cv::Point>> find_contours(const cv::Mat& input) {
      * 通过条件：
      * 运行测试点，你找到的轮廓与答案的轮廓一样就行。
      */
-    
-    std::vector<std::vector<cv::Point>> res;
-    // IMPLEMENT YOUR CODE HERE
-    return res;
+    imshow("input", input);
+    Mat gray, binary;
+    cvtColor(input, gray, COLOR_BGR2GRAY);
+    threshold(gray, binary, 100, 255, THRESH_BINARY);
+    vector<vector<Point>> contours;
+    vector<Vec4i> hierarchy;
+    findContours(binary, contours, hierarchy, RETR_CCOMP, CHAIN_APPROX_SIMPLE);
+    vector<vector<Point>> res;
+    for (size_t i = 0; i < contours.size(); i++) {
+         if (hierarchy[i][3] != -1 && hierarchy[i][2] == -1) {
+             res.push_back(contours[i]);
+         }
+     }
+     Mat contour_image = Mat::zeros(input.size(), CV_8UC3);
+     drawContours(contour_image, res, -1, Scalar(0, 255, 0), 2);
+     imshow("contours", contour_image);
+     waitKey(0);
+     return res;
 }

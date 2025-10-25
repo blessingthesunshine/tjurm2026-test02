@@ -1,5 +1,5 @@
 #include "impls.h"
-
+using namespace cv;
 
 std::vector<cv::Mat> threshold(const cv::Mat& src, int threshold_value) {
     /**
@@ -28,6 +28,7 @@ std::vector<cv::Mat> threshold(const cv::Mat& src, int threshold_value) {
     cv::Mat gray, dst;
 
     // TODO: 实现代码
-
+    cvtColor(src, gray, COLOR_BGR2GRAY, 0);
+    threshold(gray, dst, threshold_value, 255, THRESH_BINARY);
     return {gray, dst};
 }
