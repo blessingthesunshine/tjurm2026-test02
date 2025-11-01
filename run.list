@@ -1,13 +1,11 @@
-compute_ioucam
-
-
-stop
 resize
+stop
+
 erode
 find_contours
 rect
 split
 threshold
-
+compute_ioucam
 compute_area_ratio
 roi_color

@@ -1,7 +1,7 @@
 #include "impls.h"
 #include <unordered_map>
-
-
+using namespace cv;
+using namespace std;
 std::unordered_map<int, cv::Rect> roi_color(const cv::Mat& input) {
     /**
      * INPUT: 一张彩色图片, 路径: opencv/assets/roi_color/input.png
@@ -28,8 +28,26 @@ std::unordered_map<int, cv::Rect> roi_color(const cv::Mat& input) {
      *      3. 使用统计的方法，得到该 ROI 区域的颜色
      *      4. 将颜色 和 矩形位置 存入 map 中
      */
-    std::unordered_map<int, cv::Rect> res;
+    unordered_map<int, Rect> res;
     // IMPLEMENT YOUR CODE HERE
-
+    Mat gray, binary;
+    cvtColor(input, gray, COLOR_BGR2GRAY);
+    threshold(gray, binary, 0, 255, THRESH_BINARY_INV | THRESH_OTSU);
+    vector<vector<Point>> contours;
+    findContours(binary, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+    for (const auto& contour : contours) {
+        Rect rect = boundingRect(contour);
+        Mat roi = input(rect);
+        Scalar mean_color = mean(roi);
+        int color_key = -1;
+        if (mean_color[2] > mean_color[1] && mean_color[2] > mean_color[0]) {
+            color_key = 2;  // Red
+        } else if (mean_color[1] > mean_color[2] && mean_color[1] > mean_color[0]) {
+            color_key = 1;  // Green
+        } else {
+            color_key = 0;  // Blue
+        }
+        res[color_key] = rect;
+    }
     return res;
 }

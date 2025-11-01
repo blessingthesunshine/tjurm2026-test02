@@ -19,7 +19,7 @@ std::vector<std::vector<cv::Point>> find_contours(const cv::Mat& input) {
     imshow("input", input);
     Mat gray, binary;
     cvtColor(input, gray, COLOR_BGR2GRAY);
-    threshold(gray, binary, 100, 255, THRESH_BINARY);
+    threshold(gray, binary, 100, 255, THRESH_BINARY_INV);
     vector<vector<Point>> contours;
     vector<Vec4i> hierarchy;
     findContours(binary, contours, hierarchy, RETR_CCOMP, CHAIN_APPROX_SIMPLE);

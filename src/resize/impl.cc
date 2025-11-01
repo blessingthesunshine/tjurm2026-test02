@@ -1,5 +1,5 @@
 #include "impls.h"
-
+using namespace cv;
 
 cv::Mat my_resize(const cv::Mat& input, float scale) {
     /**
@@ -15,5 +15,14 @@ cv::Mat my_resize(const cv::Mat& input, float scale) {
      */
     int new_rows = input.rows * scale, new_cols = input.cols * scale;
     // IMPLEMENT YOUR CODE HERE
+    Mat output = Mat::zeros(new_rows, new_cols, input.type());
+    for (int r = 0; r < new_rows; r++) {
+        for (int c = 0; c < new_cols; c++) {
+            int orig_r = static_cast<int>(r / scale);
+            int orig_c = static_cast<int>(c / scale);
+            output.at<Vec3b>(r, c) = input.at<Vec3b>(orig_r, orig_c);
+        }
+    }
+    return output;
     return cv::Mat::zeros(new_rows, new_cols, input.type());
 }
