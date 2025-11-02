@@ -39,7 +39,7 @@ std::unordered_map<int, cv::Rect> roi_color(const cv::Mat& input) {
         Rect rect = boundingRect(contour);
         Mat roi = input(rect);
         Scalar mean_color = mean(roi);
-        int color_key = -1;
+        int color_key = 0;
         if (mean_color[2] > mean_color[1] && mean_color[2] > mean_color[0]) {
             color_key = 2;  // Red
         } else if (mean_color[1] > mean_color[2] && mean_color[1] > mean_color[0]) {
