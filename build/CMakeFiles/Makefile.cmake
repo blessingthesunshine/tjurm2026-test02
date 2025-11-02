@@ -60,5 +60,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/tjurm_tutorial.dir/DependInfo.cmake"
+  "CMakeFiles/recognition.dir/DependInfo.cmake"
   )

@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tjurm_tutorial
+# Target rules for targets named recognition
 
 # Build rule for target.
-tjurm_tutorial: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tjurm_tutorial
-.PHONY : tjurm_tutorial
+recognition: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recognition
+.PHONY : recognition
 
 # fast build rule for target.
-tjurm_tutorial/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/build
-.PHONY : tjurm_tutorial/fast
+recognition/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/build
+.PHONY : recognition/fast
 
 main.o: main.cc.o
 .PHONY : main.o
 
 # target to build an object file
 main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/main.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -142,7 +142,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/main.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -150,7 +150,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/main.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/main.cc.s
 .PHONY : main.cc.s
 
 src/area_ratio/impl.o: src/area_ratio/impl.cc.o
@@ -158,7 +158,7 @@ src/area_ratio/impl.o: src/area_ratio/impl.cc.o
 
 # target to build an object file
 src/area_ratio/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/area_ratio/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/area_ratio/impl.cc.o
 .PHONY : src/area_ratio/impl.cc.o
 
 src/area_ratio/impl.i: src/area_ratio/impl.cc.i
@@ -166,7 +166,7 @@ src/area_ratio/impl.i: src/area_ratio/impl.cc.i
 
 # target to preprocess a source file
 src/area_ratio/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/area_ratio/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/area_ratio/impl.cc.i
 .PHONY : src/area_ratio/impl.cc.i
 
 src/area_ratio/impl.s: src/area_ratio/impl.cc.s
@@ -174,7 +174,7 @@ src/area_ratio/impl.s: src/area_ratio/impl.cc.s
 
 # target to generate assembly for a file
 src/area_ratio/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/area_ratio/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/area_ratio/impl.cc.s
 .PHONY : src/area_ratio/impl.cc.s
 
 src/area_ratio/test.o: src/area_ratio/test.cc.o
@@ -182,7 +182,7 @@ src/area_ratio/test.o: src/area_ratio/test.cc.o
 
 # target to build an object file
 src/area_ratio/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/area_ratio/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/area_ratio/test.cc.o
 .PHONY : src/area_ratio/test.cc.o
 
 src/area_ratio/test.i: src/area_ratio/test.cc.i
@@ -190,7 +190,7 @@ src/area_ratio/test.i: src/area_ratio/test.cc.i
 
 # target to preprocess a source file
 src/area_ratio/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/area_ratio/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/area_ratio/test.cc.i
 .PHONY : src/area_ratio/test.cc.i
 
 src/area_ratio/test.s: src/area_ratio/test.cc.s
@@ -198,7 +198,7 @@ src/area_ratio/test.s: src/area_ratio/test.cc.s
 
 # target to generate assembly for a file
 src/area_ratio/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/area_ratio/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/area_ratio/test.cc.s
 .PHONY : src/area_ratio/test.cc.s
 
 src/compute_iou/impl.o: src/compute_iou/impl.cc.o
@@ -206,7 +206,7 @@ src/compute_iou/impl.o: src/compute_iou/impl.cc.o
 
 # target to build an object file
 src/compute_iou/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/compute_iou/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/compute_iou/impl.cc.o
 .PHONY : src/compute_iou/impl.cc.o
 
 src/compute_iou/impl.i: src/compute_iou/impl.cc.i
@@ -214,7 +214,7 @@ src/compute_iou/impl.i: src/compute_iou/impl.cc.i
 
 # target to preprocess a source file
 src/compute_iou/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/compute_iou/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/compute_iou/impl.cc.i
 .PHONY : src/compute_iou/impl.cc.i
 
 src/compute_iou/impl.s: src/compute_iou/impl.cc.s
@@ -222,7 +222,7 @@ src/compute_iou/impl.s: src/compute_iou/impl.cc.s
 
 # target to generate assembly for a file
 src/compute_iou/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/compute_iou/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/compute_iou/impl.cc.s
 .PHONY : src/compute_iou/impl.cc.s
 
 src/compute_iou/test.o: src/compute_iou/test.cc.o
@@ -230,7 +230,7 @@ src/compute_iou/test.o: src/compute_iou/test.cc.o
 
 # target to build an object file
 src/compute_iou/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/compute_iou/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/compute_iou/test.cc.o
 .PHONY : src/compute_iou/test.cc.o
 
 src/compute_iou/test.i: src/compute_iou/test.cc.i
@@ -238,7 +238,7 @@ src/compute_iou/test.i: src/compute_iou/test.cc.i
 
 # target to preprocess a source file
 src/compute_iou/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/compute_iou/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/compute_iou/test.cc.i
 .PHONY : src/compute_iou/test.cc.i
 
 src/compute_iou/test.s: src/compute_iou/test.cc.s
@@ -246,7 +246,7 @@ src/compute_iou/test.s: src/compute_iou/test.cc.s
 
 # target to generate assembly for a file
 src/compute_iou/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/compute_iou/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/compute_iou/test.cc.s
 .PHONY : src/compute_iou/test.cc.s
 
 src/erode/impl.o: src/erode/impl.cc.o
@@ -254,7 +254,7 @@ src/erode/impl.o: src/erode/impl.cc.o
 
 # target to build an object file
 src/erode/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/erode/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/erode/impl.cc.o
 .PHONY : src/erode/impl.cc.o
 
 src/erode/impl.i: src/erode/impl.cc.i
@@ -262,7 +262,7 @@ src/erode/impl.i: src/erode/impl.cc.i
 
 # target to preprocess a source file
 src/erode/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/erode/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/erode/impl.cc.i
 .PHONY : src/erode/impl.cc.i
 
 src/erode/impl.s: src/erode/impl.cc.s
@@ -270,7 +270,7 @@ src/erode/impl.s: src/erode/impl.cc.s
 
 # target to generate assembly for a file
 src/erode/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/erode/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/erode/impl.cc.s
 .PHONY : src/erode/impl.cc.s
 
 src/erode/test.o: src/erode/test.cc.o
@@ -278,7 +278,7 @@ src/erode/test.o: src/erode/test.cc.o
 
 # target to build an object file
 src/erode/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/erode/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/erode/test.cc.o
 .PHONY : src/erode/test.cc.o
 
 src/erode/test.i: src/erode/test.cc.i
@@ -286,7 +286,7 @@ src/erode/test.i: src/erode/test.cc.i
 
 # target to preprocess a source file
 src/erode/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/erode/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/erode/test.cc.i
 .PHONY : src/erode/test.cc.i
 
 src/erode/test.s: src/erode/test.cc.s
@@ -294,7 +294,7 @@ src/erode/test.s: src/erode/test.cc.s
 
 # target to generate assembly for a file
 src/erode/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/erode/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/erode/test.cc.s
 .PHONY : src/erode/test.cc.s
 
 src/find_contours/impl.o: src/find_contours/impl.cc.o
@@ -302,7 +302,7 @@ src/find_contours/impl.o: src/find_contours/impl.cc.o
 
 # target to build an object file
 src/find_contours/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/find_contours/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/find_contours/impl.cc.o
 .PHONY : src/find_contours/impl.cc.o
 
 src/find_contours/impl.i: src/find_contours/impl.cc.i
@@ -310,7 +310,7 @@ src/find_contours/impl.i: src/find_contours/impl.cc.i
 
 # target to preprocess a source file
 src/find_contours/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/find_contours/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/find_contours/impl.cc.i
 .PHONY : src/find_contours/impl.cc.i
 
 src/find_contours/impl.s: src/find_contours/impl.cc.s
@@ -318,7 +318,7 @@ src/find_contours/impl.s: src/find_contours/impl.cc.s
 
 # target to generate assembly for a file
 src/find_contours/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/find_contours/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/find_contours/impl.cc.s
 .PHONY : src/find_contours/impl.cc.s
 
 src/find_contours/test.o: src/find_contours/test.cc.o
@@ -326,7 +326,7 @@ src/find_contours/test.o: src/find_contours/test.cc.o
 
 # target to build an object file
 src/find_contours/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/find_contours/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/find_contours/test.cc.o
 .PHONY : src/find_contours/test.cc.o
 
 src/find_contours/test.i: src/find_contours/test.cc.i
@@ -334,7 +334,7 @@ src/find_contours/test.i: src/find_contours/test.cc.i
 
 # target to preprocess a source file
 src/find_contours/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/find_contours/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/find_contours/test.cc.i
 .PHONY : src/find_contours/test.cc.i
 
 src/find_contours/test.s: src/find_contours/test.cc.s
@@ -342,7 +342,7 @@ src/find_contours/test.s: src/find_contours/test.cc.s
 
 # target to generate assembly for a file
 src/find_contours/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/find_contours/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/find_contours/test.cc.s
 .PHONY : src/find_contours/test.cc.s
 
 src/rect/impl.o: src/rect/impl.cc.o
@@ -350,7 +350,7 @@ src/rect/impl.o: src/rect/impl.cc.o
 
 # target to build an object file
 src/rect/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/rect/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/rect/impl.cc.o
 .PHONY : src/rect/impl.cc.o
 
 src/rect/impl.i: src/rect/impl.cc.i
@@ -358,7 +358,7 @@ src/rect/impl.i: src/rect/impl.cc.i
 
 # target to preprocess a source file
 src/rect/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/rect/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/rect/impl.cc.i
 .PHONY : src/rect/impl.cc.i
 
 src/rect/impl.s: src/rect/impl.cc.s
@@ -366,7 +366,7 @@ src/rect/impl.s: src/rect/impl.cc.s
 
 # target to generate assembly for a file
 src/rect/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/rect/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/rect/impl.cc.s
 .PHONY : src/rect/impl.cc.s
 
 src/rect/test.o: src/rect/test.cc.o
@@ -374,7 +374,7 @@ src/rect/test.o: src/rect/test.cc.o
 
 # target to build an object file
 src/rect/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/rect/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/rect/test.cc.o
 .PHONY : src/rect/test.cc.o
 
 src/rect/test.i: src/rect/test.cc.i
@@ -382,7 +382,7 @@ src/rect/test.i: src/rect/test.cc.i
 
 # target to preprocess a source file
 src/rect/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/rect/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/rect/test.cc.i
 .PHONY : src/rect/test.cc.i
 
 src/rect/test.s: src/rect/test.cc.s
@@ -390,7 +390,7 @@ src/rect/test.s: src/rect/test.cc.s
 
 # target to generate assembly for a file
 src/rect/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/rect/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/rect/test.cc.s
 .PHONY : src/rect/test.cc.s
 
 src/resize/impl.o: src/resize/impl.cc.o
@@ -398,7 +398,7 @@ src/resize/impl.o: src/resize/impl.cc.o
 
 # target to build an object file
 src/resize/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/resize/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/resize/impl.cc.o
 .PHONY : src/resize/impl.cc.o
 
 src/resize/impl.i: src/resize/impl.cc.i
@@ -406,7 +406,7 @@ src/resize/impl.i: src/resize/impl.cc.i
 
 # target to preprocess a source file
 src/resize/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/resize/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/resize/impl.cc.i
 .PHONY : src/resize/impl.cc.i
 
 src/resize/impl.s: src/resize/impl.cc.s
@@ -414,7 +414,7 @@ src/resize/impl.s: src/resize/impl.cc.s
 
 # target to generate assembly for a file
 src/resize/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/resize/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/resize/impl.cc.s
 .PHONY : src/resize/impl.cc.s
 
 src/resize/test.o: src/resize/test.cc.o
@@ -422,7 +422,7 @@ src/resize/test.o: src/resize/test.cc.o
 
 # target to build an object file
 src/resize/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/resize/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/resize/test.cc.o
 .PHONY : src/resize/test.cc.o
 
 src/resize/test.i: src/resize/test.cc.i
@@ -430,7 +430,7 @@ src/resize/test.i: src/resize/test.cc.i
 
 # target to preprocess a source file
 src/resize/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/resize/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/resize/test.cc.i
 .PHONY : src/resize/test.cc.i
 
 src/resize/test.s: src/resize/test.cc.s
@@ -438,7 +438,7 @@ src/resize/test.s: src/resize/test.cc.s
 
 # target to generate assembly for a file
 src/resize/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/resize/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/resize/test.cc.s
 .PHONY : src/resize/test.cc.s
 
 src/roi_color/impl.o: src/roi_color/impl.cc.o
@@ -446,7 +446,7 @@ src/roi_color/impl.o: src/roi_color/impl.cc.o
 
 # target to build an object file
 src/roi_color/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/roi_color/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/roi_color/impl.cc.o
 .PHONY : src/roi_color/impl.cc.o
 
 src/roi_color/impl.i: src/roi_color/impl.cc.i
@@ -454,7 +454,7 @@ src/roi_color/impl.i: src/roi_color/impl.cc.i
 
 # target to preprocess a source file
 src/roi_color/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/roi_color/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/roi_color/impl.cc.i
 .PHONY : src/roi_color/impl.cc.i
 
 src/roi_color/impl.s: src/roi_color/impl.cc.s
@@ -462,7 +462,7 @@ src/roi_color/impl.s: src/roi_color/impl.cc.s
 
 # target to generate assembly for a file
 src/roi_color/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/roi_color/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/roi_color/impl.cc.s
 .PHONY : src/roi_color/impl.cc.s
 
 src/roi_color/test.o: src/roi_color/test.cc.o
@@ -470,7 +470,7 @@ src/roi_color/test.o: src/roi_color/test.cc.o
 
 # target to build an object file
 src/roi_color/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/roi_color/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/roi_color/test.cc.o
 .PHONY : src/roi_color/test.cc.o
 
 src/roi_color/test.i: src/roi_color/test.cc.i
@@ -478,7 +478,7 @@ src/roi_color/test.i: src/roi_color/test.cc.i
 
 # target to preprocess a source file
 src/roi_color/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/roi_color/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/roi_color/test.cc.i
 .PHONY : src/roi_color/test.cc.i
 
 src/roi_color/test.s: src/roi_color/test.cc.s
@@ -486,7 +486,7 @@ src/roi_color/test.s: src/roi_color/test.cc.s
 
 # target to generate assembly for a file
 src/roi_color/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/roi_color/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/roi_color/test.cc.s
 .PHONY : src/roi_color/test.cc.s
 
 src/split/impl.o: src/split/impl.cc.o
@@ -494,7 +494,7 @@ src/split/impl.o: src/split/impl.cc.o
 
 # target to build an object file
 src/split/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/split/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/split/impl.cc.o
 .PHONY : src/split/impl.cc.o
 
 src/split/impl.i: src/split/impl.cc.i
@@ -502,7 +502,7 @@ src/split/impl.i: src/split/impl.cc.i
 
 # target to preprocess a source file
 src/split/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/split/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/split/impl.cc.i
 .PHONY : src/split/impl.cc.i
 
 src/split/impl.s: src/split/impl.cc.s
@@ -510,7 +510,7 @@ src/split/impl.s: src/split/impl.cc.s
 
 # target to generate assembly for a file
 src/split/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/split/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/split/impl.cc.s
 .PHONY : src/split/impl.cc.s
 
 src/split/test.o: src/split/test.cc.o
@@ -518,7 +518,7 @@ src/split/test.o: src/split/test.cc.o
 
 # target to build an object file
 src/split/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/split/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/split/test.cc.o
 .PHONY : src/split/test.cc.o
 
 src/split/test.i: src/split/test.cc.i
@@ -526,7 +526,7 @@ src/split/test.i: src/split/test.cc.i
 
 # target to preprocess a source file
 src/split/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/split/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/split/test.cc.i
 .PHONY : src/split/test.cc.i
 
 src/split/test.s: src/split/test.cc.s
@@ -534,7 +534,7 @@ src/split/test.s: src/split/test.cc.s
 
 # target to generate assembly for a file
 src/split/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/split/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/split/test.cc.s
 .PHONY : src/split/test.cc.s
 
 src/threshold/impl.o: src/threshold/impl.cc.o
@@ -542,7 +542,7 @@ src/threshold/impl.o: src/threshold/impl.cc.o
 
 # target to build an object file
 src/threshold/impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/threshold/impl.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/threshold/impl.cc.o
 .PHONY : src/threshold/impl.cc.o
 
 src/threshold/impl.i: src/threshold/impl.cc.i
@@ -550,7 +550,7 @@ src/threshold/impl.i: src/threshold/impl.cc.i
 
 # target to preprocess a source file
 src/threshold/impl.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/threshold/impl.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/threshold/impl.cc.i
 .PHONY : src/threshold/impl.cc.i
 
 src/threshold/impl.s: src/threshold/impl.cc.s
@@ -558,7 +558,7 @@ src/threshold/impl.s: src/threshold/impl.cc.s
 
 # target to generate assembly for a file
 src/threshold/impl.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/threshold/impl.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/threshold/impl.cc.s
 .PHONY : src/threshold/impl.cc.s
 
 src/threshold/test.o: src/threshold/test.cc.o
@@ -566,7 +566,7 @@ src/threshold/test.o: src/threshold/test.cc.o
 
 # target to build an object file
 src/threshold/test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/threshold/test.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/threshold/test.cc.o
 .PHONY : src/threshold/test.cc.o
 
 src/threshold/test.i: src/threshold/test.cc.i
@@ -574,7 +574,7 @@ src/threshold/test.i: src/threshold/test.cc.i
 
 # target to preprocess a source file
 src/threshold/test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/threshold/test.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/threshold/test.cc.i
 .PHONY : src/threshold/test.cc.i
 
 src/threshold/test.s: src/threshold/test.cc.s
@@ -582,7 +582,7 @@ src/threshold/test.s: src/threshold/test.cc.s
 
 # target to generate assembly for a file
 src/threshold/test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/threshold/test.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/threshold/test.cc.s
 .PHONY : src/threshold/test.cc.s
 
 src/utils.o: src/utils.cc.o
@@ -590,7 +590,7 @@ src/utils.o: src/utils.cc.o
 
 # target to build an object file
 src/utils.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/utils.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/utils.cc.o
 .PHONY : src/utils.cc.o
 
 src/utils.i: src/utils.cc.i
@@ -598,7 +598,7 @@ src/utils.i: src/utils.cc.i
 
 # target to preprocess a source file
 src/utils.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/utils.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/utils.cc.i
 .PHONY : src/utils.cc.i
 
 src/utils.s: src/utils.cc.s
@@ -606,7 +606,7 @@ src/utils.s: src/utils.cc.s
 
 # target to generate assembly for a file
 src/utils.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tjurm_tutorial.dir/build.make CMakeFiles/tjurm_tutorial.dir/src/utils.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recognition.dir/build.make CMakeFiles/recognition.dir/src/utils.cc.s
 .PHONY : src/utils.cc.s
 
 # Help Target
@@ -617,7 +617,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... tjurm_tutorial"
+	@echo "... recognition"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
